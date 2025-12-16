@@ -12,6 +12,7 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 
+    <!-- Mantenemos Tailwind CDN para los estilos -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -26,15 +27,15 @@
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
     "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
-    "vite": "https://esm.sh/vite@^7.3.0",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.3.0"
   }
 }
 </script>
 </head>
   <body>
     <div id="root"></div>
-    <!-- Ruta relativa correcta para que Vite procese el archivo -->
-    <script type="module" src="./index.tsx"></script>
+    <!-- Vite reemplazará esto automáticamente con el JS compilado durante el build -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
