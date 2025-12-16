@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Corrección de Español - Práctica Personalizada</title>
     
-    <!-- Etiquetas para vista previa en redes sociales y Github (Open Graph) -->
     <meta name="description" content="Una aplicación interactiva para ayudar a estudiantes a identificar y corregir errores comunes en léxico, gramática y ortografía.">
     <meta property="og:title" content="Corrección de Español - Práctica Personalizada">
     <meta property="og:description" content="Una aplicación interactiva para ayudar a estudiantes a identificar y corregir errores comunes en léxico, gramática y ortografía.">
@@ -24,16 +23,18 @@
 {
   "imports": {
     "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
     "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
 }
 </script>
 </head>
   <body>
     <div id="root"></div>
-    <!-- Script principal para cargar la aplicación -->
+    <!-- Ruta relativa correcta para que Vite procese el archivo -->
     <script type="module" src="./index.tsx"></script>
   </body>
 </html>
